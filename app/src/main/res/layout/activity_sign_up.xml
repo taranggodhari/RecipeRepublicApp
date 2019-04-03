@@ -117,7 +117,7 @@
         android:drawableLeft="@drawable/confirm_password"
         android:drawablePadding="@dimen/drawablePadding"
         android:gravity="center_vertical"
-        android:hint="@string/confirmPassword"
+        android:hint="@string/confirm_Password"
         android:inputType="textPassword"
         android:padding="@dimen/txt_padding"
         android:singleLine="true"
@@ -151,7 +151,8 @@
         android:text="@string/signUp"
         android:textColor="@color/ColorPrimary"
         android:textSize="@dimen/edit_textSize"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:onClick="RecipeDetails"/>
 
 
     <TextView

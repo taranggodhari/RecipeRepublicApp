@@ -2,11 +2,11 @@
     <string name="app_name">Recipe Republic</string>
     <string name="email">Email Id</string>
     <string name="password">Password</string>
-    <string name="confirmPassword">Confirm Password</string>
+    <string name="confirm_Password">Confirm Password</string>
     <string name="login">LOGIN</string>
     <string name="show_pwd">Show Password</string>
     <string name="hide_pwd">Hide Password</string>
-    <string name="forgot">Forgot password?</string>
+    <string name="forgot_password">Forgot password?</string>
     <string name="newUser">Not a Member yet? Sign Up here.</string>
     <string name="firstName">First Name</string>
     <string name="lastName">Last Name</string>
@@ -17,4 +17,24 @@
     <string name="registered_emailid">Please enter your Registered Email Id below:</string>
     <string name="submit">SUBMIT</string>
     <string name="back">BACK</string>
+    <string name="ingredients">Ingredients: </string>
+    <string name="steps">Steps: </string>
+
+    <!-- Just for Designing; Can remove-->
+    <string name="recipeName">Aloo Tikki</string>
+    <string name="ownerName">Vrunda Shah</string>
+    <string name="ingredients1">Oil, 1 Onion(sliced), 1/2 tsp Coriander seeds, 1/2 tsp Cumin seeds,1/2 tsp Black peppercorn, 4 Potatoes(Boiled,mashed), 1/2 Cup Peas(Boiled,mashed), 1 Cup Ginger paste.</string>
+    <string name="steps1">Step 1: abc
+        Step 2: abc
+        Step 3: abc
+        Step 4: abc
+        Step 5: abc
+        Step 6: abc
+        Step 7: abc
+        Step 8: abc
+        Step 9: abc
+        Step 10: abc
+        Step 11: abc,uiciwqwiyiewyfiweidhsdxbjhbsxvhgc fuctee67qeeoqwueoejqkwnda bcv giucaowhjhdvqwdutychbsvw dciiod nwqqw e oe   eqyeq78ye82ed bugyveqfiqwgq63tq782egqqwdvcdghcvas
+        gyuwqgfqwwyfrqoue2 enbqefwet6 t788 q8ry3928uehdhbcajsoawbed gcygciaoan cvfuyscywgyi bc acwu cakjjso cahiu8o3e2 kasjdiahwdvibzaohdbhcbaioai hdiuwih xkadciih
+    </string>
 </resources>

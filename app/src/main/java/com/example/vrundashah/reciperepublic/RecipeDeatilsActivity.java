@@ -6,21 +6,14 @@ package com.example.vrundashah.reciperepublic;
 //Vrunda Shah (300900997)
 //Yash Brahmbhatt (300932152)
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 
-public class LoginActivity extends AppCompatActivity {
+public class RecipeDeatilsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-    }
-
-    public void Login (View view){
-        Intent intent = new Intent(this, SignUpActivity.class);
-        startActivity(intent);
+        setContentView(R.layout.activity_recipe_deatils);
     }
 }
