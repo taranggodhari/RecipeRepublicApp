@@ -1,4 +1,4 @@
-package com.example.vrundashah.reciperepublic;
+package com.centennial.reciperepublic.myapplication;
 
 import org.junit.Test;
 

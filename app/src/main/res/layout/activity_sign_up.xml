@@ -117,7 +117,7 @@
         android:drawableLeft="@drawable/confirm_password"
         android:drawablePadding="@dimen/drawablePadding"
         android:gravity="center_vertical"
-        android:hint="@string/confirm_Password"
+        android:hint="@string/confirm_password"
         android:inputType="textPassword"
         android:padding="@dimen/txt_padding"
         android:singleLine="true"
@@ -147,12 +147,12 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/layout_marginTop"
+        android:onClick="RecipeDetails"
         android:padding="@dimen/btn_padding"
-        android:text="@string/signUp"
+        android:text="@string/sign_up"
         android:textColor="@color/ColorPrimary"
         android:textSize="@dimen/edit_textSize"
-        android:textStyle="bold"
-        android:onClick="RecipeDetails"/>
+        android:textStyle="bold" />
 
 
     <TextView
@@ -164,6 +164,7 @@
         android:gravity="center"
         android:padding="@dimen/txt_padding"
         android:text="@string/already_user"
+        android:onClick="Login"
         android:textColor="@color/ColorWhiteGreyish"
         android:textSize="@dimen/edit_textSize" />
 

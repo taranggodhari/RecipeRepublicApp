@@ -1,4 +1,4 @@
-package com.example.vrundashah.reciperepublic;
+package com.centennial.reciperepublic.myapplication;
 
 // Authors:
 //Akanksha Sarna (300932073)
@@ -18,10 +18,13 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
     }
+    public void Login (View view){
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
 
-//    Remove
     public void RecipeDetails (View view){
-        Intent intent = new Intent(this, RecipeDeatilsActivity.class);
+        Intent intent = new Intent(this, RecipeDetailsActivity.class);
         startActivity(intent);
     }
 }
