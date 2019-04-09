@@ -89,7 +89,7 @@ public class SearchActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         edamamModel = new Gson().fromJson(response.toString(), EdamamModel.Rootobject.class);
-                        Toast.makeText(SearchActivity.this, "Yay! Recipe Found", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SearchActivity.this, "Yay! We Found your Recipe", Toast.LENGTH_SHORT).show();
                         mAdapter = new MyRecyclerViewAdapter(getRecipeList());
                         mRecyclerView.setAdapter(mAdapter);
                         ((MyRecyclerViewAdapter) mAdapter).setOnItemClickListener(new MyRecyclerViewAdapter.MyClickListener() {

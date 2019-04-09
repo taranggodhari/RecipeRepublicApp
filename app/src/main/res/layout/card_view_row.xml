@@ -31,8 +31,7 @@
                 android:layout_weight="1"
                 android:elevation="5dp"
                 android:padding="@dimen/drawablePadding"
-                android:scaleType="fitXY"
-                card_view:srcCompat="@drawable/alootikki" />
+                android:scaleType="fitXY"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -50,7 +49,6 @@
                     android:allowUndo="true"
                     android:background="@color/ColorSecondary"
                     android:elevation="5dp"
-                    android:text="@string/error_message_phone_number"
                     android:textAlignment="center"
                     android:textAllCaps="false"
                     android:textColor="@color/ColorAccent"
@@ -62,7 +60,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/card_margin"
-                    android:text="@string/ingredients1"
                     android:textAlignment="textStart"
                     android:textColor="@color/ColorAccent"
                     android:textSize="12sp"

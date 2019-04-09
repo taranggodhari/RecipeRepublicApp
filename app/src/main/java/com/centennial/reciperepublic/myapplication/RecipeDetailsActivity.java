@@ -30,6 +30,7 @@ public class RecipeDetailsActivity extends AppCompatActivity {
     String tableName = "tbl_user";
     String userEmail, phoneNumber, recipeJson;
     EdamamModel.Recipe recipe;
+    ImageView locationOnMap;
     TextView textViewRecipeName, textViewOwner, textViewCalories, textViewDailyValue, textViewServings;
     Button buttonPrepStep;
     LinearLayout layoutIngredients;
@@ -50,7 +51,8 @@ public class RecipeDetailsActivity extends AppCompatActivity {
         textViewCalories = findViewById(R.id.textViewCalories);
         textViewDailyValue = findViewById(R.id.textViewDailyValue);
         textViewServings = findViewById(R.id.textViewServings);
-        layoutIngredients =findViewById(R.id.layoutIngredients);
+        layoutIngredients = findViewById(R.id.layoutIngredients);
+        locationOnMap = findViewById(R.id.locationOnMap);
         buttonPrepStep = findViewById(R.id.buttonPrepStep);
         //Get UserEmail SharedPreferences
         SharedPreferences mySharedPreferences = getSharedPreferences("MySharedPreferences", 0);
@@ -66,13 +68,13 @@ public class RecipeDetailsActivity extends AppCompatActivity {
         textViewCalories.setText(String.format("%.0f", recipe.getCalories()));
         textViewDailyValue.setText(String.format("%.0f", recipe.getTotalWeight()) + "%");
         textViewServings.setText(String.format("%.0f", recipe.getYield()));
-        for (String line : recipe.getIngredientLines()){
+        for (String line : recipe.getIngredientLines()) {
             TextView textViewIngredientsLine = new TextView(this);
             textViewIngredientsLine.setTextSize(16);
             textViewIngredientsLine.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
             textViewIngredientsLine.setTextColor(Color.WHITE);
             textViewIngredientsLine.setTypeface(null, Typeface.ITALIC);
-            textViewIngredientsLine.setText("➤ "+line);
+            textViewIngredientsLine.setText("➤ " + line);
             layoutIngredients.addView(textViewIngredientsLine);
         }
         buttonPrepStep.setOnClickListener(new View.OnClickListener() {
@@ -83,9 +85,15 @@ public class RecipeDetailsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        locationOnMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(RecipeDetailsActivity.this, MapsActivity.class);
+                startActivity(intent);
+            }
+        });
 
         phoneNumber = db.getPhoneNumber(userEmail);
-        Toast.makeText(this, phoneNumber + recipe.getLabel(), Toast.LENGTH_SHORT).show();
     }
 
     private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
