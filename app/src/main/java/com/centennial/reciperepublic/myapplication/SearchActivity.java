@@ -1,16 +1,19 @@
 package com.centennial.reciperepublic.myapplication;
+// Authors:
+//Akanksha Sarna (300932073)
+//Tarang Godhari (300931365)
+//Vrunda Shah (300900997)
+//Yash Brahmbhatt (300932152)
 
-import android.app.SearchManager;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.view.View;
-import android.support.v7.widget.SearchView;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;

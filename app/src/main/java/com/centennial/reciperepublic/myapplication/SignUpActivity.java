@@ -5,7 +5,6 @@ package com.centennial.reciperepublic.myapplication;
 //Tarang Godhari (300931365)
 //Vrunda Shah (300900997)
 //Yash Brahmbhatt (300932152)
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
@@ -37,7 +36,7 @@ public class SignUpActivity extends AppCompatActivity {
         emailAddress = findViewById(R.id.userEmailId);
         fullName = findViewById(R.id.fullName);
         password = findViewById(R.id.password);
-        phoneNumber = findViewById(R.id.phoneNumber);
+        phoneNumber = findViewById(R.id.phoneNumberEditText);
         //Pass entered values to database
         signUpBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

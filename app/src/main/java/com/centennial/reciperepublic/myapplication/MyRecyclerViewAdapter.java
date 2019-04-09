@@ -1,5 +1,9 @@
 package com.centennial.reciperepublic.myapplication;
-
+// Authors:
+//Akanksha Sarna (300932073)
+//Tarang Godhari (300931365)
+//Vrunda Shah (300900997)
+//Yash Brahmbhatt (300932152)
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -9,7 +13,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 

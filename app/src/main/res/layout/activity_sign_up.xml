@@ -64,7 +64,7 @@
         android:background="@color/ColorWhiteGreyish" />
 
     <EditText
-        android:id="@+id/phoneNumber"
+        android:id="@+id/phoneNumberEditText"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/layout_marginTop"

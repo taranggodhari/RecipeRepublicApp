@@ -1,5 +1,9 @@
 package com.centennial.reciperepublic.myapplication;
-
+// Authors:
+//Akanksha Sarna (300932073)
+//Tarang Godhari (300931365)
+//Vrunda Shah (300900997)
+//Yash Brahmbhatt (300932152)
 import android.Manifest;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;

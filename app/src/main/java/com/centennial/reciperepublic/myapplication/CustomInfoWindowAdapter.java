@@ -1,6 +1,9 @@
 package com.centennial.reciperepublic.myapplication;
-//Author: Tarang Godhari (300931365)
-//taranggodhari_COMP304_Assignment5
+// Authors:
+//Akanksha Sarna (300932073)
+//Tarang Godhari (300931365)
+//Vrunda Shah (300900997)
+//Yash Brahmbhatt (300932152)
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;

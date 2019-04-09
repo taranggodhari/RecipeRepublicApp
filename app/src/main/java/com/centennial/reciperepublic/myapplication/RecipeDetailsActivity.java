@@ -1,25 +1,26 @@
 package com.centennial.reciperepublic.myapplication;
-
+// Authors:
+//Akanksha Sarna (300932073)
+//Tarang Godhari (300931365)
+//Vrunda Shah (300900997)
+//Yash Brahmbhatt (300932152)
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.gson.Gson;
 
@@ -27,22 +28,19 @@ import java.io.InputStream;
 
 public class RecipeDetailsActivity extends AppCompatActivity {
     private Intent intent;
-    String tableName = "tbl_user";
-    String userEmail, phoneNumber, recipeJson;
+    String userEmail, recipeJson;
     EdamamModel.Recipe recipe;
-    ImageView locationOnMap;
+    ImageView locationOnMap,sendMessage;
     TextView textViewRecipeName, textViewOwner, textViewCalories, textViewDailyValue, textViewServings;
     Button buttonPrepStep;
     LinearLayout layoutIngredients;
-    DatabaseHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_details);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        //Initialize DBHelper
-        db = new DatabaseHelper(this);
+        //Initialize Gson
         Gson gson = new Gson();
 
         //Get all View Items
@@ -53,6 +51,7 @@ public class RecipeDetailsActivity extends AppCompatActivity {
         textViewServings = findViewById(R.id.textViewServings);
         layoutIngredients = findViewById(R.id.layoutIngredients);
         locationOnMap = findViewById(R.id.locationOnMap);
+        sendMessage = findViewById(R.id.sendMessage);
         buttonPrepStep = findViewById(R.id.buttonPrepStep);
         //Get UserEmail SharedPreferences
         SharedPreferences mySharedPreferences = getSharedPreferences("MySharedPreferences", 0);
@@ -92,8 +91,15 @@ public class RecipeDetailsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        sendMessage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(RecipeDetailsActivity.this, MessagingActivity.class);
+                startActivity(intent);
+            }
+        });
 
-        phoneNumber = db.getPhoneNumber(userEmail);
+
     }
 
     private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
