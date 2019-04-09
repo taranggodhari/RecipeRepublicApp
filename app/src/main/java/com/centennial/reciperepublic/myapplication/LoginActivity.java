@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
 
     }
     public void Login (View view){
-        //Verfiy id user is in database or not
+        //Verify id user is in database or not
         if (db.checkUser(email.getText().toString(), password.getText().toString(), tableName)) {
             //Create SharedPreferences to store userEmail
             SharedPreferences mySharedPreference = getSharedPreferences("MySharedPreferences", 0);
@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
             prefEditor.commit();
 
             //Send to next Activity
-            intent = new Intent(this, RecipeDetailsActivity.class);
+            intent = new Intent(this, SearchActivity.class);
             startActivity(intent);
         } else {
             Toast.makeText(this, "Email or Password is Invalid", Toast.LENGTH_LONG).show();

@@ -4,6 +4,7 @@
     <color name="ColorPrimaryDark">#000000</color>
     <color name="ColorAccent">#FFFFFF</color>
     <color name="ColorWhiteGreyish">#EEEEEE</color>
-    <color name="ColorGrey">#669E9E9E</color>
-
+    <color name="ColorGrey">#7F9E9E9E</color>
+    <color name="ColorSecondary">#017267</color>
+    <color name="recipe_title">#4c4c4c</color>
 </resources>

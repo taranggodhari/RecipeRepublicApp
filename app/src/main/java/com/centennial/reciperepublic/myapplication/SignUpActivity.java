@@ -56,7 +56,7 @@ public class SignUpActivity extends AppCompatActivity {
                         prefEditor.putString("userEmail", emailAddress.getText().toString());
                         prefEditor.commit();
 
-                        intent = new Intent(SignUpActivity.this, RecipeDetailsActivity.class);
+                        intent = new Intent(SignUpActivity.this, SearchActivity.class);
                         startActivity(intent);
                     } else {
                         Toast.makeText(getApplicationContext(), "Something Went Wrong! Please Restart the App", Toast.LENGTH_LONG).show();
