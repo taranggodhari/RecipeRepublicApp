@@ -11,9 +11,13 @@
     <string name="show_pwd">Show Password</string>
     <string name="hide_pwd">Hide Password</string>
     <string name="forgot_password">Forgot password?</string>
-    <string name="firstName">First Name</string>
-    <string name="lastName">Last Name</string>
-    <string name="mobileNumber">Mobile Number</string>
+    <string name="fullName">Full Name</string>
+    <string name="phoneNumber">Phone Number</string>
+
+    <string name="error_message_fullName">Enter Username</string>
+    <string name="error_message_email">Enter Valid Email </string>
+    <string name="error_message_phone_number">Enter valid Phone Number</string>
+    <string name="error_message_password">Password must be more than 8 characters</string>
 
     <string name="terms_conditions">Agree all the Terms and Conditions.</string>
 

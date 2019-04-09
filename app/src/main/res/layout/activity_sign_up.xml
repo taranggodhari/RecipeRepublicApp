@@ -20,7 +20,7 @@
         <!--android:textStyle="bold" />-->
 
     <EditText
-        android:id="@+id/firstName"
+        android:id="@+id/fullName"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/layout_marginTop"
@@ -28,7 +28,7 @@
         android:drawableLeft="@drawable/user"
         android:drawablePadding="@dimen/drawablePadding"
         android:gravity="center_vertical"
-        android:hint="@string/firstName"
+        android:hint="@string/fullName"
         android:inputType="textCapWords"
         android:padding="@dimen/txt_padding"
         android:singleLine="true"
@@ -64,7 +64,7 @@
         android:background="@color/ColorWhiteGreyish" />
 
     <EditText
-        android:id="@+id/mobileNumber"
+        android:id="@+id/phoneNumber"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/layout_marginTop"
@@ -72,13 +72,14 @@
         android:drawableLeft="@drawable/phone"
         android:drawablePadding="@dimen/drawablePadding"
         android:gravity="center_vertical"
-        android:hint="@string/mobileNumber"
+        android:hint="@string/phoneNumber"
         android:inputType="phone"
         android:padding="@dimen/txt_padding"
         android:singleLine="true"
         android:textColor="@color/ColorAccent"
         android:textColorHint="@color/ColorAccent"
-        android:textSize="@dimen/edit_textSize" />
+        android:textSize="@dimen/edit_textSize"
+        android:maxLength="10"/>
 
     <View
         android:layout_width="fill_parent"
@@ -140,14 +141,14 @@
         android:layout_marginTop="@dimen/layout_marginTop"
         android:text="@string/terms_conditions"
         android:textColor="@color/ColorAccent"
-        android:textSize="@dimen/edit_textSize" />
+        android:textSize="@dimen/edit_textSize"
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/signUpBtn"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/layout_marginTop"
-        android:onClick="RecipeDetails"
         android:padding="@dimen/btn_padding"
         android:text="@string/sign_up"
         android:textColor="@color/ColorPrimary"
