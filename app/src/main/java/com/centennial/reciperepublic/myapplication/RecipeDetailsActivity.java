@@ -71,7 +71,7 @@ public class RecipeDetailsActivity extends AppCompatActivity {
             TextView textViewIngredientsLine = new TextView(this);
             textViewIngredientsLine.setTextSize(16);
             textViewIngredientsLine.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
-            textViewIngredientsLine.setTextColor(Color.WHITE);
+            textViewIngredientsLine.setTextColor(Color.BLACK);
             textViewIngredientsLine.setTypeface(null, Typeface.ITALIC);
             textViewIngredientsLine.setText("➤ " + line);
             layoutIngredients.addView(textViewIngredientsLine);

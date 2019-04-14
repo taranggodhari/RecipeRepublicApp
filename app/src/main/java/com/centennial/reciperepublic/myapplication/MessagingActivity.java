@@ -23,7 +23,6 @@ public class MessagingActivity extends AppCompatActivity {
     private static final int SEND_SMS_PERMISSION_REQUEST_CODE = 1;
 
     String userEmail, recipeJson, myPhoneNumber, receiverPhoneNumber, smsTemplate;
-    Button btnSendSMS;
     EditText smsEditText, phoneNumberEditText;
     EdamamModel.Recipe recipe;
     DatabaseHelper db;
@@ -52,7 +51,7 @@ public class MessagingActivity extends AppCompatActivity {
         phoneNumberEditText = findViewById(R.id.phoneNumberEditText);
         sendBtn = findViewById(R.id.btnSendSMS);
 
-        sendBtn.setEnabled(false);
+        sendBtn.setEnabled(true);
         if (!checkPermission(Manifest.permission.SEND_SMS))  ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.SEND_SMS}, SEND_SMS_PERMISSION_REQUEST_CODE);
         if (checkPermission(Manifest.permission.SEND_SMS)) {
             sendBtn.setEnabled(true);
