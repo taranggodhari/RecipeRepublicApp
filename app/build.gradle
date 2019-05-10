@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
-
+def RECIPE_REPUBLIC_APP_ID = RecipeRepublic_AppId ?: "Enter APP-ID in gradle.properties"
+def RECIPE_REPUBLIC_APP_KEY = RecipeRepublic_AppKey ?: "Enter APP-KEY in gradle.properties"
+def GOOGLE_APP_KEY = GoogleMap_ApiKey ?: "Enter APP-KEY in gradle.properties"
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -9,6 +11,15 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        each { type ->
+            type.buildConfigField 'String', "RecipeRepublic_AppId", RECIPE_REPUBLIC_APP_ID
+            type.buildConfigField 'String', "RecipeRepublic_AppKey", RECIPE_REPUBLIC_APP_KEY
+            type.buildConfigField 'String', "GoogleMap_ApiKey", GOOGLE_APP_KEY
+
+            type.resValue 'string', "recipe_republic_app_id", RECIPE_REPUBLIC_APP_ID
+            type.resValue 'string', "recipe_republic_app_key", RECIPE_REPUBLIC_APP_KEY
+            type.resValue 'string', "google_map_api_key", GOOGLE_APP_KEY
+        }
     }
     buildTypes {
         release {

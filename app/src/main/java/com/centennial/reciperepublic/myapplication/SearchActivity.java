@@ -42,8 +42,8 @@ public class SearchActivity extends AppCompatActivity {
     private String uri = "https://api.edamam.com/search?q=";
 
     private String searchQuery = "fresh summer picks";
-    private static String app_id = "18a19a65";
-    private static String app_key = "092028f43672e065166d6a298cbca5cb";
+    private static String app_id = BuildConfig.RecipeRepublic_AppId;
+    private static String app_key = BuildConfig.RecipeRepublic_AppKey;
     private static String search_range = "0&to=7";
     private String urlAfter = "&app_id=" + app_id + "&app_key=" + app_key + "&from=" + search_range + "";
     private EdamamModel.Rootobject edamamModel;
